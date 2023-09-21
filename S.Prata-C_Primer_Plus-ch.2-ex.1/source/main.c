@@ -10,10 +10,10 @@
                a pair of printf() calls to print your first and last names on
                one line.
                The output should look like this (but using your name):
-               Gustav Mahler <-First print statement
-               Gustav <-Second print statement
-               Mahler <-Still the second print statement
-               Gustav Mahler <-Third and fourth print statements
+                Gustav Mahler <-First print statement
+                Gustav <-Second print statement
+                Mahler <-Still the second print statement
+                Gustav Mahler <-Third and fourth print statements
  ============================================================================
  */
 
