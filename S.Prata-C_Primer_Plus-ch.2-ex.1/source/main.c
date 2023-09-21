@@ -21,12 +21,12 @@
 
 int main(void)
 {
-	printf("Viacheslav Yefisko\n");
+    printf("Viacheslav Yefisko\n");
 
-	printf("Viacheslav\nYefisko\n");
+    printf("Viacheslav\nYefisko\n");
 
-	printf("Viacheslav ");
-	printf("Yefisko\n\n");	
+    printf("Viacheslav ");
+    printf("Yefisko\n\n");
 
-	return 0;
+    return 0;
 }
