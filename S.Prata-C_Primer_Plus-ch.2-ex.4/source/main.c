@@ -18,8 +18,8 @@
 
 #include <stdio.h>
 
-void jolly();
-void deny();
+void jolly(void);
+void deny(void);
 
 int main(void)
 {
@@ -31,13 +31,13 @@ int main(void)
     return 0;
 }
 
-void jolly()
+void jolly(void)
 {
     printf("For he's a jolly good fellow!\n");
     return;
 }
 
-void deny()
+void deny(void)
 {
     printf("Which nobody can deny!\n\n");
     return;
