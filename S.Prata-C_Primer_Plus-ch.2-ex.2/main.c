@@ -13,7 +13,7 @@
 int main(void)
 {
     printf("Name: Viacheslav Yefisko\n");
-    printf("Address: Nikolaev city, Ukraine\n");
+    printf("Address: Nikolaev city, Ukraine\n\n");
 
     return 0;
 }
