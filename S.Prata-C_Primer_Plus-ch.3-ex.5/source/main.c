@@ -15,11 +15,12 @@
 int main(void)
 {
     int age;
+    float seconds_in_year = 3.156e7;
 
     printf("Enter your age in years:\n");
     scanf("%d", &age);
 
-    printf("So you are %e seconds old.\n\n", age * 3.156e7);
+    printf("So you are %e seconds old.\n\n", age * seconds_in_year);
 
     return 0;
 }

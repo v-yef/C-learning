@@ -16,8 +16,8 @@
 int main(void)
 {
     printf("\a");
-    printf("Startled by the sudden sound, Sally shouted,\n\
-    \"By the Great Pumpkin, what was that!\"\n\n");
+    printf("Startled by the sudden sound, Sally shouted,\n"
+    "\"By the Great Pumpkin, what was that!\"\n\n");
 
     return 0;
 }
