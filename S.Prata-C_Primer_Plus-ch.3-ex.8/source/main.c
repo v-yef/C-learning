@@ -26,7 +26,7 @@ int main(void)
     ounces = cups / 8;
     tablespoons = ounces / 2;
     teaspoons = tablespoons / 3;
-    // float is better because it saves fractional part after division
+    // float is better because it stores fractional parts of quotients
     // and volumes can be real numbers as well
 
     printf("Volume in pints: %.3f\n", pints);
