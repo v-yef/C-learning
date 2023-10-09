@@ -43,7 +43,6 @@ int main(void)
     // liters_per_100_km = liter_per_km * 100
 
     liters_per_100_km = 1 / (miles_per_gallon * kilometers_to_mile / liters_to_gallon) * 100;
-
     printf("Liters per 100 km: %.1f\n\n", liters_per_100_km);
 
     return 0;
