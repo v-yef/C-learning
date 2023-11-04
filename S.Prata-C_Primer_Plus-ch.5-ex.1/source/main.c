@@ -16,24 +16,25 @@
 
 int main(void)
 {
-    const int minutes_to_hour = 60;
+    const int MINUTES_TO_HOUR = 60;
+
     int input_minutes, minutes, hours;
 
-    printf("Enter number of minutes (0<= to exit)\n");
+    printf("Enter number of minutes (0<= to exit): ");
     scanf("%d", &input_minutes);
 
     while (input_minutes > 0)
     {
-        hours = input_minutes / minutes_to_hour;
-        minutes = input_minutes % minutes_to_hour;
+        hours = input_minutes / MINUTES_TO_HOUR;
+        minutes = input_minutes % MINUTES_TO_HOUR;
 
         printf("%d minutes equal to: %d hour(s) %d minute(s)\n\n", input_minutes, hours, minutes);
 
-        printf("Enter number of minutes (0<= to exit)\n");
+        printf("Enter number of minutes (0<= to exit): ");
         scanf("%d", &input_minutes);
     }
 
-    printf("\n");
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

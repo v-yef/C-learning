@@ -31,7 +31,9 @@ int main(void)
         sum = sum + count;
     }
 
-    printf("sum = %d\n\n", sum);
+    printf("sum = %d\n", sum);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }*/
@@ -53,7 +55,9 @@ int main(void)
         sum = sum + count * count;
     }
 
-    printf("sum = %d\n\n", sum);
+    printf("sum = %d\n", sum);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

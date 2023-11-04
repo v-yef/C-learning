@@ -5,10 +5,10 @@
  Version     : 0
  Copyright   : MIT License
  Description : Write a program that asks for an integer and then prints all
-               the integers from (and including) that value up to (and including)
-               a value larger by 10. (That is, if the input is 5, the output
-               runs from 5 to 15.) Be sure to separate each output value by a
-               space or tab or newline.
+               the integers from (and including) that value up to (and
+               including) a value larger by 10. (That is, if the input is 5,
+               the output runs from 5 to 15.) Be sure to separate each output
+               value by a space or tab or newline.
  ============================================================================
  */
 
@@ -18,12 +18,10 @@ int main(void)
 {
     int number, max_number;
 
-    printf("Enter int number\n");
+    printf("Enter int number: ");
     scanf("%d", &number);
 
     max_number = number + 10;
-
-    printf("\n");
 
     while (number <= max_number)
     {
@@ -31,7 +29,7 @@ int main(void)
         number++;
     }
 
-    printf("\n");
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

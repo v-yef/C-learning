@@ -19,16 +19,22 @@ int main(void)
 {
     double input;
 
-    printf("Enter double number to be cubed\n");
+    printf("Enter double number to be cubed: ");
     scanf("%lf", &input);
 
+    printf("The result of cubing is: ");
     print_cubed(input);
+
+    printf("\n");
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
 
 void print_cubed(double num)
 {
-    printf("%lf\n\n", num * num * num);
+    printf("%lf", num * num * num);
+
     return;
 }

@@ -19,24 +19,25 @@
 
 int main(void)
 {
-    const int days_to_week = 7;
+    const int DAYS_TO_WEEK = 7;
+
     int input_days, days, weeks;
 
-    printf("Enter number of days (0<= to exit)\n");
+    printf("Enter number of days (0<= to exit): ");
     scanf("%d", &input_days);
 
     while (input_days > 0)
     {
-        weeks = input_days / days_to_week;
-        days = input_days % days_to_week;
+        weeks = input_days / DAYS_TO_WEEK;
+        days = input_days % DAYS_TO_WEEK;
 
         printf("%d days are %d weeks, %d days\n\n", input_days, weeks, days);
 
-        printf("Enter number of days (0<= to exit)\n");
+        printf("Enter number of days (0<= to exit): ");
         scanf("%d", &input_days);
     }
 
-    printf("\n");
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
