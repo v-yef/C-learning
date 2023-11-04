@@ -9,9 +9,10 @@
                 India, China,
                 Brazil, Russia
 
-               Have the program use two user-defined functions in addition to main(): one named
-               br() that prints “Brazil, Russia” once, and one named ic() that prints “India, China”
-               once. Let main() take care of any additional printing tasks.
+               Have the program use two user-defined functions in addition
+               to main(): one named br() that prints “Brazil, Russia” once,
+               and one named ic() that prints “India, China” once. Let main()
+               take care of any additional printing tasks.
  ============================================================================
  */
 
@@ -31,7 +32,9 @@ int main(void)
     printf(",\n");
 
     br();
-    printf("\n\n");
+    printf("\n");
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
@@ -39,11 +42,13 @@ int main(void)
 void br(void)
 {
     printf("Brazil, Russia");
+
     return;
 }
 
 void ic(void)
 {
     printf("India, China");
+    
     return;
 }

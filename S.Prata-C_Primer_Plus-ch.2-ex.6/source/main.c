@@ -23,7 +23,9 @@ int main(void)
 
     printf("Toes = %d\n", toes);
     printf("Twice toes = %d\n", twice_toes);
-    printf("Squared toes = %d\n\n", squared_toes);
+    printf("Squared toes = %d\n", squared_toes);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

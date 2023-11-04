@@ -13,7 +13,9 @@
 int main(void)
 {
     printf("Name: Viacheslav Yefisko\n");
-    printf("Address: Nikolaev city, Ukraine\n\n");
+    printf("Address: Nikolaev city, Ukraine\n");
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

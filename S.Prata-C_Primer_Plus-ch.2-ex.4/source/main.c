@@ -10,9 +10,10 @@
                 For he's a jolly good fellow!
                 Which nobody can deny!
 
-               Have the program use two user-defined functions in addition to main():
-               one named jolly() that prints the “jolly good” message once, and one
-               named deny() that prints the final line once.
+               Have the program use two user-defined functions in addition
+               to main(): one named jolly() that prints the “jolly good”
+               message once, and one named deny() that prints the final line
+               once.
  ============================================================================
  */
 
@@ -28,17 +29,21 @@ int main(void)
     jolly();
     deny();
 
+    printf("\n=====> DONE <=====\n");
+
     return 0;
 }
 
 void jolly(void)
 {
     printf("For he's a jolly good fellow!\n");
+
     return;
 }
 
 void deny(void)
 {
-    printf("Which nobody can deny!\n\n");
+    printf("Which nobody can deny!\n");
+    
     return;
 }

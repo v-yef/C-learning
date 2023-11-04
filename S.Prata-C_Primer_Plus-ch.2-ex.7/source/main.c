@@ -10,8 +10,9 @@
                 Smile!Smile!
                 Smile!
 
-               Have the program define a function that displays the string Smile!
-               once, and have the program use the function as often as needed.
+               Have the program define a function that displays the string
+               Smile! once, and have the program use the function as often as
+               needed.
  ============================================================================
  */
 
@@ -31,7 +32,9 @@ int main(void)
     printf("\n");
 
     smile();
-    printf("\n\n");
+    printf("\n");
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
@@ -39,5 +42,6 @@ int main(void)
 void smile(void)
 {
     printf("Smile!");
+
     return;
 }

@@ -26,7 +26,9 @@ int main(void)
     printf("Viacheslav\nYefisko\n");
 
     printf("Viacheslav ");
-    printf("Yefisko\n\n");
+    printf("Yefisko\n");
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
