@@ -22,13 +22,15 @@ int main(void)
 {
    char first_name[15];
 
-   printf("Enter your first name\n");
+   printf("Enter your first name: ");
    scanf("%s", first_name);
 
    printf("\"%s\"\n", first_name);
    printf("\"%20s\"\n", first_name);
    printf("\"%-20s\"\n", first_name);
-   printf("%*s\n\n", (int)strlen(first_name) + 3, first_name);
+   printf("%*s\n", (int)strlen(first_name) + 3, first_name);
+
+   printf("\n=====> DONE <=====\n");
 
    return 0;
 }

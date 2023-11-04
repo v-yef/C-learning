@@ -16,16 +16,20 @@
 
 int main(void)
 {
-    float height_inches;
-    float height_feet;
+    float height_inches, height_feet;
     char name[15];
 
-    printf("Enter your height in inches and your name\n");
-    scanf("%f%s", &height_inches, name);
+    printf("Enter your height in inches: ");
+    scanf("%f", &height_inches);
+
+    printf("Enter your name: ");
+    scanf("%s", name);
 
     height_feet = height_inches / 12;
 
-    printf("%s, you are %.3f feet tall\n\n", name, height_feet);
+    printf("%s, you are %.3f feet tall\n", name, height_feet);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

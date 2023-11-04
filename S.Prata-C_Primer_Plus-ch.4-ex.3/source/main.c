@@ -7,7 +7,8 @@
  Description : Write a program that reads in a floating-point number and prints
                it first in decimal-point notation and then in exponential
                notation. Have the output use the following formats (the number
-               of digits shown in the exponent may be different for your system):
+               of digits shown in the exponent may be different for your
+               system):
                 a. The input is 21.3 or 2.1e+001.
                 b. The input is +21.290 or 2.129E+001.
  ============================================================================
@@ -19,14 +20,13 @@ int main(void)
 {
     float number;
 
-    printf("Enter a floating-point number\n");
+    printf("Enter a floating-point number: ");
     scanf("%f", &number);
 
-    printf("%.1f\n", number);
-    printf("%.1e\n\n", number);
-    
-    printf("%.3f\n", number);
-    printf("%.3e\n\n", number);
+    printf("The input is %.1f or %.1e.\n", number, number);
+    printf("The input is %+.3f or %.3e.\n", number, number);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
