@@ -18,10 +18,12 @@ int main(void)
     float height_inches;
     float centimeters_to_inch = 2.54;
 
-    printf("Enter your height in inches:\n");
+    printf("Enter your height in inches: ");
     scanf("%f", &height_inches);
 
-    printf("Your height in centimeters: %.2f\n\n", height_inches * centimeters_to_inch);
+    printf("Your height in centimeters: %.2f\n", height_inches * centimeters_to_inch);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

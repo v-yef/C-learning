@@ -19,8 +19,8 @@ int main(void)
     years = 34;
     days = years * 365;
 
-    printf("I'm %d years old.\n", years);
-    printf("It means that I'm %d days old.\n", days);
+    printf("My age in years: %d.\n", years);
+    printf("My age in days:  %d.\n", days);
 
     printf("\n=====> DONE <=====\n");
 

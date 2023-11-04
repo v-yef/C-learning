@@ -27,7 +27,9 @@ int main(void)
 
     printf("fixed-point notation: %.6f\n", value);
     printf("exponential notation: %e\n", value);
-    printf("p notation:: %a\n\n", value);
+    printf("p notation:: %a\n", value);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

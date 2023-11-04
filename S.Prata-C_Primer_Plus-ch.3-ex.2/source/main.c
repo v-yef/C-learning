@@ -5,7 +5,8 @@
  Version     : 0
  Copyright   : MIT License
  Description : Write a program that asks you to enter an ASCII code value,
-               such as 66, and then prints the character having that ASCII code.
+               such as 66, and then prints the character having that ASCII
+               code.
  ============================================================================
  */
 
@@ -15,10 +16,12 @@ int main(void)
 {
     short ascii_code;
 
-    printf("Enter an ASCII code value:\n");
+    printf("Enter an ASCII code value: ");
     scanf("%hd", &ascii_code);
 
-    printf("It is a \"%c\" character!\n\n", ascii_code);
+    printf("This is a \"%c\" character!\n", ascii_code);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

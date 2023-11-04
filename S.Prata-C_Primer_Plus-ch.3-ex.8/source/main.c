@@ -19,7 +19,7 @@ int main(void)
 {
     float cups, pints, ounces, tablespoons, teaspoons;
 
-    printf("Enter volume in cups:\n");
+    printf("Enter volume in cups: ");
     scanf("%f", &cups);
 
     pints = 2 * cups;
@@ -29,10 +29,12 @@ int main(void)
     // float is better because it stores fractional parts of quotients
     // and volumes can be real numbers as well
 
-    printf("Volume in pints: %.3f\n", pints);
-    printf("Volume in ounces: %.3f\n", ounces);
+    printf("Volume in pints:       %.3f\n", pints);
+    printf("Volume in ounces:      %.3f\n", ounces);
     printf("Volume in tablespoons: %.3f\n", tablespoons);
-    printf("Volume in teaspoons: %.3f\n\n", teaspoons);
+    printf("Volume in teaspoons:   %.3f\n\n", teaspoons);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
