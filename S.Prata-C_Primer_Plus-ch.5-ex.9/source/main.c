@@ -65,8 +65,8 @@ void temperatures(double fahrenheit_temp)
     kelvin = celsius + CELS_TO_KELVIN_CONST;
 
     printf("Fahrenheit: %.2lf\n", fahrenheit_temp);
-    printf("Celsius: %.2lf\n", celsius);
-    printf("Kelvin: %.2lf\n", kelvin);
+    printf("Celsius:    %.2lf\n", celsius);
+    printf("Kelvin:     %.2lf\n", kelvin);
 
     return;
 }
