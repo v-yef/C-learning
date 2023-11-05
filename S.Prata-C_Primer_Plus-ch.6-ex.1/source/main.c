@@ -14,23 +14,25 @@
 
 int main(void)
 {
-    const int array_size = 26;
+    const size_t ARRAY_SIZE = 26;
 
-    char letters[array_size];
+    char letters[ARRAY_SIZE];
     char letter;
-    int i;
+    size_t i;
 
     for (i = 0, letter = 'a'; letter <= 'z'; i++, letter++)
     {
         letters[i] = letter;
     }
 
-    for (i = 0; i < array_size; i++)
+    for (i = 0; i < ARRAY_SIZE; i++)
     {
         printf("%c ", letters[i]);
     }
 
-    printf("\n\n");
+    printf("\n");
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

@@ -26,12 +26,12 @@ int main(void)
 {
     const int ROWS = 6;
 
-    int row;
+    int row, col;
     char ch;
 
     for (row = 0; row < ROWS; row++)
     {
-        for (ch = 'F'; ch >= ('F' - row); ch--)
+        for (ch = 'F', col = 'F' - row; ch >= col; ch--)
         {
             printf("%c", ch);
         }
@@ -39,7 +39,7 @@ int main(void)
         printf("\n");
     }
 
-    printf("\n");
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

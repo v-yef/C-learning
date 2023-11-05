@@ -17,12 +17,13 @@
 
 int main(void)
 {
-    int rows = 5;
-    int i, j;
+    const int ROWS = 5;
 
-    for (i = 0; i < rows; i++)
+    int row, col;
+
+    for (row = 0; row < ROWS; row++)
     {
-        for (j = 0; j <= i; j++)
+        for (col = 0; col <= row; col++)
         {
             printf("$");
         }
@@ -30,7 +31,7 @@ int main(void)
         printf("\n");
     }
 
-    printf("\n");
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
