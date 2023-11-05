@@ -13,25 +13,27 @@
 
 int main(void)
 {
-    int const arr_length = 8;
+    int const ARR_LENGTH = 8;
 
-    int array[arr_length], index;
+    int array[ARR_LENGTH], index;
 
     printf("Enter the array of 8 integers: ");
 
-    for (index = 0; index < arr_length; index++)
+    for (index = 0; index < ARR_LENGTH; index++)
     {
         scanf("%d", &array[index]);
     }
 
     printf("The reversed array of 8 integers: ");
 
-    for (index = arr_length - 1; index >= 0; index--)
+    for (index = ARR_LENGTH - 1; index >= 0; index--)
     {
         printf("%d ", array[index]);
     }
 
-    printf("\n\n");
+    printf("\n");
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

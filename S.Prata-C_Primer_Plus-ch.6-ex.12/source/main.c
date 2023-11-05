@@ -21,7 +21,7 @@
 
 int main(void)
 {
-    float sum_1, sum_2, limit, i;
+    float sum_1, sum_2, limit, denominator;
 
     sum_1 = sum_2 = 1.0;
 
@@ -30,18 +30,18 @@ int main(void)
 
     while (limit > 0)
     {
-        for (i = 2.0; i <= limit; i++)
+        for (denominator = 2.0; denominator <= limit; denominator++)
         {
             sum_1 += 1.0 / limit;
         }
 
-        for (i = 2.0; i <= limit; i++)
+        for (denominator = 2.0; denominator <= limit; denominator++)
         {
             sum_2 -= 1.0 / limit + 1.0 / (limit + 1.0);
         }
 
-        printf("1.0 + 1.0/2.0 + 1.0/3.0 + 1.0/4.0 + ...+1.0/limit=  %f\n", sum_1);
-        printf("1.0 - 1.0/2.0 + 1.0/3.0 - 1.0/4.0 + ...+1.0/limit=  %f\n", sum_2);
+        printf("1.0 + 1.0/2.0 + 1.0/3.0 + 1.0/4.0 + ...+1.0/%.1f=  %f\n", limit, sum_1);
+        printf("1.0 - 1.0/2.0 + 1.0/3.0 - 1.0/4.0 + ...+1.0/%.1f=  %f\n", limit, sum_2);
 
         sum_1 = sum_2 = 1.0;
 
@@ -49,7 +49,7 @@ int main(void)
         scanf("%f", &limit);
     }
 
-    printf("\n");
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

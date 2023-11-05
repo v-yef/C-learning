@@ -18,16 +18,16 @@ int main(void)
 
     char letters[ARRAY_SIZE];
     char letter;
-    size_t i;
+    size_t index;
 
-    for (i = 0, letter = 'a'; letter <= 'z'; i++, letter++)
+    for (index = 0, letter = 'a'; letter <= 'z'; index++, letter++)
     {
-        letters[i] = letter;
+        letters[index] = letter;
     }
 
-    for (i = 0; i < ARRAY_SIZE; i++)
+    for (index = 0; index < ARRAY_SIZE; index++)
     {
-        printf("%c ", letters[i]);
+        printf("%c ", letters[index]);
     }
 
     printf("\n");

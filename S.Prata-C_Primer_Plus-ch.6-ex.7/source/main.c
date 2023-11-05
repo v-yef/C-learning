@@ -5,7 +5,7 @@
  Version     : 0
  Copyright   : MIT License
  Description : Write a program that reads a single word into a character array
-               and then prints the word backward. Hint: Use strlen() (Chapter 4)
+               and then prints the word backward. Hint: Use strlen()(Chapter 4)
                to compute the index of the last character in the array.
  ============================================================================
  */
@@ -28,7 +28,9 @@ int main(void)
         printf("%c", word[char_index]);
     }
 
-    printf("\n\n");
+    printf("\n");
+    
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

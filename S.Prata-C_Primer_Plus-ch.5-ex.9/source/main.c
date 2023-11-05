@@ -45,7 +45,7 @@ int main(void)
     {
         temperatures(fahrenheit);
 
-        printf("\nEnter a Fahrenheit temperature(q to quit): ");
+        printf("\nEnter another Fahrenheit temperature(q to quit): ");
     }
 
     printf("\n=====> DONE <=====\n");

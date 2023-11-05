@@ -33,7 +33,7 @@ int main(void)
 
         printf("%d days are %d weeks, %d days\n\n", input_days, weeks, days);
 
-        printf("Enter number of days (0<= to exit): ");
+        printf("Enter next number of days (0<= to exit): ");
         scanf("%d", &input_days);
     }
 

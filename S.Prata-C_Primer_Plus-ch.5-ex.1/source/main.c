@@ -30,7 +30,7 @@ int main(void)
 
         printf("%d minutes equal to: %d hour(s) %d minute(s)\n\n", input_minutes, hours, minutes);
 
-        printf("Enter number of minutes (0<= to exit): ");
+        printf("Enter next number of minutes (0<= to exit): ");
         scanf("%d", &input_minutes);
     }
 

@@ -22,12 +22,15 @@ int main(void)
     printf("Enter upper limit (integer) for the table: ");
     scanf("%d", &upper_limit);
 
+    printf("%7s %10s %8s\n", "Number", "Square", "Cube");
+
     for (current_num = lower_limit; current_num <= upper_limit; current_num++)
     {
-        printf("%5d %10d %10d\n", current_num, current_num * current_num, current_num * current_num * current_num);
+        printf("%5d %10d %10d\n",
+               current_num, current_num * current_num, current_num * current_num * current_num);
     }
 
-    printf("\n");
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

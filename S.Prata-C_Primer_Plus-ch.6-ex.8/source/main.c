@@ -16,7 +16,7 @@
 
 int main(void)
 {
-    const int nums_to_read = 2;
+    const int NUMS_TO_READ = 2;
 
     float first_num, second_num;
     int nums_read;
@@ -24,16 +24,16 @@ int main(void)
     printf("Enter a pair of floating-point numbers (q to quit): ");
     nums_read = scanf("%f%f", &first_num, &second_num);
 
-    while (nums_to_read == nums_read)
+    while (NUMS_TO_READ == nums_read)
     {
         printf("The difference between %.3f and %.3f divided by their product is: %.3f\n\n",
                first_num, second_num, fabsf(first_num - second_num) / fabsf(first_num * second_num));
 
-        printf("Enter a pair of floating-point numbers (q to quit): ");
+        printf("Enter next pair of floating-point numbers (q to quit): ");
         nums_read = scanf("%f%f", &first_num, &second_num);
     }
 
-    printf("\n");
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
