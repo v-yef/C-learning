@@ -31,9 +31,7 @@ int main(void)
         printf("%d ", array[index]);
     }
 
-    printf("\n");
-
-    printf("\n=====> DONE <=====\n");
+    printf("\n\n=====> DONE <=====\n");
 
     return 0;
 }

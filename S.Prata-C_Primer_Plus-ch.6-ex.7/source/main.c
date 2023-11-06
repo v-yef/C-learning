@@ -28,9 +28,7 @@ int main(void)
         printf("%c", word[char_index]);
     }
 
-    printf("\n");
-    
-    printf("\n=====> DONE <=====\n");
+    printf("\n\n=====> DONE <=====\n");
 
     return 0;
 }
