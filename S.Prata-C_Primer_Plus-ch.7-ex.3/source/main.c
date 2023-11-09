@@ -16,19 +16,23 @@
 
 int main(void)
 {
-    const int stop_num = 0;
+    const int STOP_NUM = 0;
 
-    int cur_int, even_int_count, even_int_tot, even_int_avg, odd_int_count, odd_int_tot, odd_int_avg;
+    int cur_int;
+    int even_int_count, even_int_tot, even_int_avg;
+    int odd_int_count, odd_int_tot, odd_int_avg;
 
     even_int_count = even_int_tot = even_int_avg = 0;
     odd_int_count = odd_int_tot = odd_int_avg = 0;
 
+    printf("Enter integers (0 to stop):\n");
+
     while (scanf("%d", &cur_int) == 1)
     {
-        if (cur_int == stop_num)
+        if (cur_int == STOP_NUM)
         {
             break;
-        }
+        }   
 
         if (cur_int % 2 == 0)
         {
@@ -43,12 +47,12 @@ int main(void)
     }
 
     printf("Number of even integers: %d\n", even_int_count);
-    printf("Average of even integers: %d\n", even_int_tot / even_int_count);
+    printf("Average of even integers: %d\n", even_int_count ? even_int_tot / even_int_count : 0);
 
     printf("Number of odd integers: %d\n", odd_int_count);
-    printf("Average of odd integers: %d\n", odd_int_tot / odd_int_count);
+    printf("Average of odd integers: %d\n", odd_int_count ? odd_int_tot / odd_int_count : 0);
 
-    printf("\n");
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

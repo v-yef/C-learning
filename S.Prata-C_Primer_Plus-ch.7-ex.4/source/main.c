@@ -16,19 +16,20 @@
 
 int main(void)
 {
-    const char stop_char = '#';
+    const char STOP_CHAR = '#';
 
     char cur_ch;
     int substitution_count = 0;
 
-    while ((cur_ch = getchar()) != stop_char)
+    printf("Enter text containing '!' and '.' signs and with # at the end:\n");
+
+    while ((cur_ch = getchar()) != STOP_CHAR)
     {
         if (cur_ch == '.')
         {
             putchar('!');
             substitution_count++;
         }
-
         else if (cur_ch == '!')
         {
             putchar('!');
@@ -42,7 +43,9 @@ int main(void)
         }
     }
 
-    printf("Number of substitutions: %d\n\n", substitution_count);
+    printf("Number of substitutions: %d\n", substitution_count);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
