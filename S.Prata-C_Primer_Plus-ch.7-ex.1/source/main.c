@@ -4,9 +4,10 @@
  Author      : Viacheslav Yefisko
  Version     : 0
  Copyright   : MIT License
- Description : Write a program that reads input until encountering the # character
-               and then reports the number of spaces read, the number of newline
-               characters read, and the number of all other characters read.
+ Description : Write a program that reads input until encountering the
+               # character and then reports the number of spaces read, the
+               number of newline characters read, and the number of all other
+               characters read.
  ============================================================================
  */
 
@@ -14,14 +15,16 @@
 
 int main(void)
 {
-    const char stop_char = '#';
+    const char STOP_CHAR = '#';
 
     char cur_char;
     int space_char_count, newline_char_count, other_char_count;
 
     space_char_count = newline_char_count = other_char_count = 0;
 
-    while ((cur_char = getchar()) != stop_char)
+    printf("Enter text with # at the end:\n");
+
+    while ((cur_char = getchar()) != STOP_CHAR)
     {
         if (cur_char == ' ')
         {
@@ -37,9 +40,11 @@ int main(void)
         }
     }
 
-    printf("Spaces characters  : %d\n", space_char_count);
+    printf("Space characters   : %d\n", space_char_count);
     printf("Newline characters : %d\n", newline_char_count);
-    printf("Other characters   : %d\n\n", other_char_count);
+    printf("Other characters   : %d\n", other_char_count);
+
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }

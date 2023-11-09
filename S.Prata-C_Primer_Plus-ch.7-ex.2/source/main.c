@@ -16,12 +16,14 @@
 
 int main(void)
 {
-    const char stop_char = '#';
+    const char STOP_CHAR = '#';
 
     char cur_char;
     int char_count = 0;
 
-    while ((cur_char = getchar()) != stop_char)
+    printf("Enter text with # at the end:\n");
+
+    while ((cur_char = getchar()) != STOP_CHAR)
     {
         char_count++;
 
@@ -33,7 +35,7 @@ int main(void)
         }
     }
 
-    printf("Reading done.\n\n");
+    printf("\n=====> DONE <=====\n");
 
     return 0;
 }
